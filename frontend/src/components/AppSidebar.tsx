@@ -15,6 +15,8 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "./ThemeToggle";
+import { useTheme } from "@/hooks/use-theme";
 
 const navItems = [
   { to: "/dashboard", icon: LayoutDashboard, label: "Dashboard" },
@@ -24,13 +26,13 @@ const navItems = [
   { to: "/mood", icon: Smile, label: "Humor" },
   { to: "/institution", icon: Building2, label: "Instituição" },
   { to: "/profile", icon: User, label: "Perfil" },
-  { to: "/plans", icon: CreditCard, label: "Planos" },
   { to: "/help", icon: HelpCircle, label: "Ajuda" },
 ];
 
 export function AppSidebar() {
   const location = useLocation();
   const [collapsed, setCollapsed] = useState(false);
+  const isDark = useTheme();
 
   return (
     <aside
@@ -40,9 +42,13 @@ export function AppSidebar() {
       )}
     >
       <div className="flex items-center gap-3 px-5 py-5 border-b border-border">
-        <div className="w-8 h-8 rounded-lg bg-gradient-primary flex items-center justify-center flex-shrink-0">
-          <span className="text-primary-foreground font-heading font-bold text-sm">A</span>
-        </div>
+        <div className="w-10 h-10 rounded-lg flex items-center justify-center">
+                <img 
+                  src={isDark ? "src/assets/logo-azis-branco.svg" : "src/assets/logo-azis.svg"}
+                  alt="Azis logo"
+                  className="w-12 h-12 object-contain"
+                />
+            </div>
         {!collapsed && (
           <span className="font-heading font-bold text-lg text-foreground">Azis</span>
         )}
@@ -70,6 +76,9 @@ export function AppSidebar() {
       </nav>
 
       <div className="border-t border-border p-3 space-y-1">
+        <div className="flex justify-center">
+          <ThemeToggle />
+        </div>
         <button
           onClick={() => setCollapsed(!collapsed)}
           className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary w-full transition-colors"

@@ -53,8 +53,12 @@ export default function Register() {
     <div className="min-h-screen flex">
       <div className="hidden lg:flex lg:w-1/2 bg-gradient-hero items-center justify-center p-12">
         <div className="max-w-md">
-          <div className="w-14 h-14 rounded-xl bg-gradient-primary flex items-center justify-center mb-8">
-            <span className="text-primary-foreground font-heading font-bold text-2xl">A</span>
+          <div className="rounded-xl flex items-center justify-center mb-8">
+            <img 
+              src="/src/assets/logo-azis-branco.svg"
+              alt="Azis logo"
+              className="h-30 object-contain"
+            />
           </div>
           <h2 className="text-4xl font-heading font-bold text-primary-foreground mb-4">
             Comece a transformar sua equipe
@@ -68,9 +72,13 @@ export default function Register() {
       <div className="flex-1 flex items-center justify-center p-8">
         <div className="w-full max-w-md">
           <div className="lg:hidden flex items-center gap-3 mb-10">
-            <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-heading font-bold">A</span>
-            </div>
+            <div className="rounded-xl flex items-center justify-center mb-8">
+            <img 
+              src="/src/assets/logo-azis-branco.svg"
+              alt="Azis logo"
+              className="h-30 object-contain"
+            />
+          </div>
             <span className="font-heading font-bold text-xl text-foreground">Azis</span>
           </div>
 
