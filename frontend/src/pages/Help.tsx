@@ -44,7 +44,7 @@ export default function Help() {
           <CardContent className="p-6 text-center">
             <Mail className="w-10 h-10 text-primary mx-auto mb-3" />
             <h3 className="font-heading font-semibold text-foreground mb-2">Email</h3>
-            <p className="text-sm text-muted-foreground mb-4">suporte@moodtask.com</p>
+            <p className="text-sm text-muted-foreground mb-4">suporte@azis.com</p>
             <Button variant="outline" className="w-full">Enviar Email</Button>
           </CardContent>
         </Card>

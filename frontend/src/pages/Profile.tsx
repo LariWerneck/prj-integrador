@@ -15,7 +15,7 @@ const pointsHistory = [
 
 export default function Profile() {
   const currentUser = getCurrentUser();
-  const isExampleUser = currentUser.email === "ana@moodtask.com";
+  const isExampleUser = currentUser.email === "ana@azis.com";
 
   return (
     <div className="p-6 lg:p-8 space-y-8 max-w-4xl">

@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken')
 
-const JWT_SECRET = process.env.JWT_SECRET || 'moodtask_secret_key'
+const JWT_SECRET = process.env.JWT_SECRET || 'azis_secret_key'
 
 function verifyToken(req, res, next) {
   const authHeader = req.headers.authorization

@@ -41,10 +41,10 @@ export function AppSidebar() {
     >
       <div className="flex items-center gap-3 px-5 py-5 border-b border-border">
         <div className="w-8 h-8 rounded-lg bg-gradient-primary flex items-center justify-center flex-shrink-0">
-          <span className="text-primary-foreground font-heading font-bold text-sm">M</span>
+          <span className="text-primary-foreground font-heading font-bold text-sm">A</span>
         </div>
         {!collapsed && (
-          <span className="font-heading font-bold text-lg text-foreground">MoodTask</span>
+          <span className="font-heading font-bold text-lg text-foreground">Azis</span>
         )}
       </div>
 

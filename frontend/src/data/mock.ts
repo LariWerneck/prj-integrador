@@ -41,7 +41,7 @@ export interface MoodLog {
 export const currentUser: User = {
   id: '1',
   name: 'Ana Silva',
-  email: 'ana@moodtask.com',
+  email: 'ana@azis.com',
   avatar: '',
   role: 'manager',
   points: 1250,
@@ -52,7 +52,7 @@ const EXAMPLE_EMAIL = currentUser.email;
 
 export function getCurrentUser(): User {
   try {
-    const stored = localStorage.getItem('moodtask_user');
+    const stored = localStorage.getItem('azis_user');
     if (stored) {
       const parsed = JSON.parse(stored) as Partial<User>;
 
@@ -89,11 +89,11 @@ export function getCurrentUser(): User {
 
 export const teamMembers: User[] = [
   currentUser,
-  { id: '2', name: 'Carlos Santos', email: 'carlos@moodtask.com', avatar: '', role: 'member', points: 980, institution_id: '1' },
-  { id: '3', name: 'Maria Oliveira', email: 'maria@moodtask.com', avatar: '', role: 'member', points: 1100, institution_id: '1' },
-  { id: '4', name: 'Pedro Costa', email: 'pedro@moodtask.com', avatar: '', role: 'member', points: 750, institution_id: '1' },
-  { id: '5', name: 'Julia Lima', email: 'julia@moodtask.com', avatar: '', role: 'member', points: 890, institution_id: '1' },
-  { id: '6', name: 'Rafael Souza', email: 'rafael@moodtask.com', avatar: '', role: 'member', points: 1350, institution_id: '1' },
+  { id: '2', name: 'Carlos Santos', email: 'carlos@azis.com', avatar: '', role: 'member', points: 980, institution_id: '1' },
+  { id: '3', name: 'Maria Oliveira', email: 'maria@azis.com', avatar: '', role: 'member', points: 1100, institution_id: '1' },
+  { id: '4', name: 'Pedro Costa', email: 'pedro@azis.com', avatar: '', role: 'member', points: 750, institution_id: '1' },
+  { id: '5', name: 'Julia Lima', email: 'julia@azis.com', avatar: '', role: 'member', points: 890, institution_id: '1' },
+  { id: '6', name: 'Rafael Souza', email: 'rafael@azis.com', avatar: '', role: 'member', points: 1350, institution_id: '1' },
 ];
 
 export const mockTasks: Task[] = [

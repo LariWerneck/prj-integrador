@@ -57,9 +57,9 @@ export default function Landing() {
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
           <div className="flex items-center gap-3">
             <div className="w-9 h-9 rounded-lg bg-gradient-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-heading font-bold">M</span>
+              <span className="text-primary-foreground font-heading font-bold">A</span>
             </div>
-            <span className="font-heading font-bold text-xl text-foreground">MoodTask</span>
+            <span className="font-heading font-bold text-xl text-foreground">Azis</span>
           </div>
 
           <div className="hidden md:flex items-center gap-8">
@@ -94,7 +94,7 @@ export default function Landing() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
             >
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-8">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 text-accent text-sm font-medium mb-8">
                 <Zap className="w-4 h-4" />
                 Produtividade + Bem-estar
               </div>
@@ -103,10 +103,10 @@ export default function Landing() {
                 Tarefas com{" "}
                 <span className="text-gradient-primary">propósito</span>,{" "}
                 equipe com{" "}
-                <span className="text-gradient-accent">energia</span>
+                <span className="text-gradient-accent">energia.</span>
               </h1>
 
-              <p className="text-lg text-muted-foreground mb-10">
+              <p className="text-lg text-foreground mb-10">
                 Gerencie tarefas, motive sua equipe com gamificação e acompanhe
                 o humor dos colaboradores — tudo em uma plataforma.
               </p>
@@ -136,7 +136,7 @@ export default function Landing() {
               loop
               muted
               playsInline
-              className="w-96 md:w-[520px]"
+              className="w-96 md:w-[520px] bg-primary/10 rounded-lg"
               transition={{
                 duration: 3,
                 repeat: Infinity,
@@ -160,7 +160,7 @@ export default function Landing() {
               Tudo que sua equipe precisa
             </h2>
 
-            <p className="text-muted-foreground text-lg">
+            <p className="text-foreground text-lg">
               Funcionalidades pensadas para produtividade e bem-estar
             </p>
           </div>
@@ -184,7 +184,7 @@ export default function Landing() {
                   {f.title}
                 </h3>
 
-                <p className="text-muted-foreground text-sm">{f.desc}</p>
+                <p className="text-foreground text-sm">{f.desc}</p>
 
               </motion.div>
             ))}
@@ -269,17 +269,17 @@ export default function Landing() {
           <div className="flex items-center gap-2">
             <div className="w-7 h-7 rounded-md bg-gradient-primary flex items-center justify-center">
               <span className="text-primary-foreground font-heading font-bold text-xs">
-                M
+                A
               </span>
             </div>
 
             <span className="font-heading font-semibold text-foreground">
-              MoodTask
+              Azis
             </span>
           </div>
 
           <p className="text-sm text-muted-foreground">
-            © 2026 MoodTask. Todos os direitos reservados.
+            © 2026 Azis. Todos os direitos reservados.
           </p>
 
         </div>

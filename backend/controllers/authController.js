@@ -2,7 +2,7 @@ const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const { pool } = require('../config/db')
 
-const JWT_SECRET = process.env.JWT_SECRET || 'moodtask_secret_key'
+const JWT_SECRET = process.env.JWT_SECRET || 'azis_secret_key'
 
 async function register(req, res) {
   try {

@@ -8,7 +8,7 @@ export default function Dashboard() {
   const currentUser = getCurrentUser();
   console.log("[Dashboard] currentUser:", currentUser);
 
-  const isExampleUser = currentUser.email === "ana@moodtask.com";
+  const isExampleUser = currentUser.email === "ana@azis.com";
 
   const stats = [
     { label: "Tarefas Concluídas", value: isExampleUser ? "23" : "0", icon: CheckCircle2, color: "text-primary" },

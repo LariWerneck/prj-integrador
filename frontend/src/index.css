@@ -9,8 +9,10 @@
     --font-heading: 'Space Grotesk', sans-serif;
     --font-body: 'Inter', sans-serif;
 
-    --background: 220 20% 97%;
-    --foreground: 224 30% 12%;
+   
+  --background: 0 0% 55%;
+  --foreground: 224 30% 12%;
+
 
     --card: 0 0% 100%;
     --card-foreground: 224 30% 12%;
@@ -18,14 +20,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 224 30% 12%;
 
-    --primary: 162 72% 40%;
+    /* logo blue – same as gradient-primary */
+    --primary: 209 70% 24%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 224 20% 94%;
     --secondary-foreground: 224 30% 12%;
 
     --muted: 220 16% 93%;
-    --muted-foreground: 220 10% 46%;
+    /* muted text now matches main foreground for full contrast */
+    --muted-foreground: 224 30% 12%;
 
     --accent: 262 80% 58%;
     --accent-foreground: 0 0% 100%;
@@ -35,13 +39,13 @@
 
     --border: 220 16% 90%;
     --input: 220 16% 90%;
-    --ring: 162 72% 40%;
+    --ring: 209 70% 24%;
 
     --radius: 0.75rem;
 
     --warning: 38 92% 50%;
     --warning-foreground: 0 0% 100%;
-    --success: 162 72% 40%;
+    --success: 209 70% 24%;
     --success-foreground: 0 0% 100%;
     --info: 210 92% 55%;
     --info-foreground: 0 0% 100%;
@@ -52,29 +56,31 @@
     --mood-sad: 220 60% 55%;
     --mood-stressed: 0 72% 55%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(162, 72%, 40%), hsl(180, 70%, 38%));
-    --gradient-accent: linear-gradient(135deg, hsl(262, 80%, 58%), hsl(290, 70%, 55%));
+    --gradient-primary: linear-gradient(135deg, hsl(209, 70%, 24%), hsl(209, 70%, 24%));
+    --gradient-accent: linear-gradient(135deg,hsl(262, 85%, 31%), hsl(262, 85%, 31%));
     --gradient-hero: linear-gradient(135deg, hsl(224, 30%, 12%), hsl(224, 25%, 18%));
     --gradient-card: linear-gradient(145deg, hsl(0, 0%, 100%), hsl(220, 20%, 98%));
 
     --shadow-sm: 0 1px 2px hsl(224 30% 12% / 0.04);
     --shadow-md: 0 4px 12px hsl(224 30% 12% / 0.06);
     --shadow-lg: 0 8px 30px hsl(224 30% 12% / 0.08);
-    --shadow-glow: 0 0 20px hsl(162 72% 40% / 0.15);
+    --shadow-glow: 0 0 20px hsl(209 70% 24% / 0.15);
 
     --sidebar-background: 0 0% 100%;
     --sidebar-foreground: 224 30% 12%;
-    --sidebar-primary: 162 72% 40%;
+    --sidebar-primary: 209 70% 24%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 220 20% 96%;
     --sidebar-accent-foreground: 224 30% 12%;
     --sidebar-border: 220 16% 92%;
-    --sidebar-ring: 162 72% 40%;
+    --sidebar-ring: 209 70% 24%;
   }
 
   .dark {
-    --background: 224 30% 8%;
-    --foreground: 220 20% 95%;
+   
+  --background: 0 0% 55%;
+
+    --foreground: 224 30% 12%;
 
     --card: 224 25% 12%;
     --card-foreground: 220 20% 95%;
@@ -82,14 +88,14 @@
     --popover: 224 25% 12%;
     --popover-foreground: 220 20% 95%;
 
-    --primary: 162 72% 45%;
+    --primary: 209 70% 24%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 224 20% 16%;
     --secondary-foreground: 220 20% 95%;
 
     --muted: 224 15% 18%;
-    --muted-foreground: 220 10% 55%;
+    --muted-foreground: 224 30% 12%;
 
     --accent: 262 80% 62%;
     --accent-foreground: 0 0% 100%;
@@ -99,16 +105,16 @@
 
     --border: 224 15% 18%;
     --input: 224 15% 18%;
-    --ring: 162 72% 45%;
+    --ring: 209 70% 24%;
 
     --sidebar-background: 224 25% 10%;
     --sidebar-foreground: 220 20% 95%;
-    --sidebar-primary: 162 72% 45%;
+    --sidebar-primary: 209 70% 24%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 224 20% 14%;
     --sidebar-accent-foreground: 220 20% 95%;
     --sidebar-border: 224 15% 16%;
-    --sidebar-ring: 162 72% 45%;
+    --sidebar-ring: 209 70% 24%;
   }
 }
 

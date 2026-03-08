@@ -24,10 +24,10 @@ async function initDB() {
   await pool.query(createTableSql)
 
   // Seed an example user so you can login with a known credential.
-  const exampleEmail = 'ana@moodtask.com'
+  const exampleEmail = 'ana@azis.com'
   const examplePassword = '123456'
   const exampleName = 'Ana Silva'
-  const exampleInstitution = 'MoodTask'
+  const exampleInstitution = 'Azis'
 
   const existing = await pool.query('SELECT id FROM users WHERE email = $1', [exampleEmail])
   if (existing.rows.length === 0) {

@@ -54,7 +54,7 @@ export default function Register() {
       <div className="hidden lg:flex lg:w-1/2 bg-gradient-hero items-center justify-center p-12">
         <div className="max-w-md">
           <div className="w-14 h-14 rounded-xl bg-gradient-primary flex items-center justify-center mb-8">
-            <span className="text-primary-foreground font-heading font-bold text-2xl">M</span>
+            <span className="text-primary-foreground font-heading font-bold text-2xl">A</span>
           </div>
           <h2 className="text-4xl font-heading font-bold text-primary-foreground mb-4">
             Comece a transformar sua equipe
@@ -69,9 +69,9 @@ export default function Register() {
         <div className="w-full max-w-md">
           <div className="lg:hidden flex items-center gap-3 mb-10">
             <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-heading font-bold">M</span>
+              <span className="text-primary-foreground font-heading font-bold">A</span>
             </div>
-            <span className="font-heading font-bold text-xl text-foreground">MoodTask</span>
+            <span className="font-heading font-bold text-xl text-foreground">Azis</span>
           </div>
 
           <h1 className="text-3xl font-heading font-bold text-foreground mb-2">Criar conta</h1>
